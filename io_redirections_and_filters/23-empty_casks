@@ -1,2 +1,2 @@
-#1/bin/bash
+#!/bin/bash
 find . \( -type f -empty -o -type d -empty \) -exec sh -c 'for f; do echo "${f##*/}"; done' _ {} +
