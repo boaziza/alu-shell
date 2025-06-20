@@ -1,2 +1,2 @@
 #!/bin/bash
-find . \( -type f -empty -o -type d -empty \) -print0 | while IFS= read -r -d '' file do printf '%s\n' "${file##*/}" done
+find . -empty -print | rev | cut -d/ -f1 | rev
